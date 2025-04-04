@@ -221,6 +221,86 @@
       "tableIfNotExist": false,
       "searchIndexIfNotExist": false,
       "GUID": "081aeb62-6cc5-4a3d-b990-59a611c82d2a"
+    },
+    {
+      "collectionName": "new_table1",
+      "type": "object",
+      "properties": [
+        {
+          "name": "new_column",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "mode": "text",
+          "subtype": "string",
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "9a4e5159-37c2-4853-9ecd-d1323ef7519c",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "new_column1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "mode": "text",
+          "subtype": "string",
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "1900fdc4-3506-4e04-8a80-6678c6952e61",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "new_column2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "mode": "text",
+          "subtype": "string",
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "c92e0829-a6cc-4004-a91a-0c0fb3ca0a4a",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "d86ef440-605c-4fb7-a132-e68e07ac255a"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "collectionUsers": [],
+      "tableIfNotExist": false,
+      "searchIndexIfNotExist": false,
+      "GUID": "c968ad04-b9c2-4537-9a45-091fc4f73f5f"
     }
   ],
   "buckets": [
@@ -266,7 +346,11 @@
     "081aeb62-6cc5-4a3d-b990-59a611c82d2a": "new_table",
     "6f6e5437-fbf2-4128-986e-49a0479c43eb": "new_column",
     "3df2cada-e9b7-4cf4-823a-1feebc8eb3ac": "new_column1",
-    "107af44e-0e07-471a-84b4-9a7c7ff7fc24": "new_column2"
+    "107af44e-0e07-471a-84b4-9a7c7ff7fc24": "new_column2",
+    "c968ad04-b9c2-4537-9a45-091fc4f73f5f": "new_table1",
+    "9a4e5159-37c2-4853-9ecd-d1323ef7519c": "new_column",
+    "1900fdc4-3506-4e04-8a80-6678c6952e61": "new_column1",
+    "c92e0829-a6cc-4004-a91a-0c0fb3ca0a4a": "new_column2"
   },
   "definitions": {
     "type": "definitions",
@@ -291,7 +375,7 @@
   "creationTS": "2019-12-06T08:13:44.124Z",
   "GUID": "51e4d7c0-1800-11ea-a7f4-5bb067781ebb",
   "code": "",
-  "lastModifTS": "2025-04-04T12:05:53.869Z",
+  "lastModifTS": "2025-04-04T12:06:43.530Z",
   "persistenceSchemaVersion": "8",
   "description": "From example https://shermandigital.com/blog/designing-a-cassandra-data-model/",
   "comments": "",
@@ -327,6 +411,14 @@
             "GUID": "081aeb62-6cc5-4a3d-b990-59a611c82d2a",
             "x": 1000,
             "y": 1030,
+            "width": 202,
+            "height": 87,
+            "color": {}
+          },
+          {
+            "GUID": "c968ad04-b9c2-4537-9a45-091fc4f73f5f",
+            "x": 960,
+            "y": 990,
             "width": 202,
             "height": 87,
             "color": {}
