@@ -528,6 +528,87 @@
       "hackoladeMeta": {
         "validationErrors": {}
       }
+    },
+    {
+      "collectionName": "new_table",
+      "type": "object",
+      "properties": [
+        {
+          "name": "new_column",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "mode": "text",
+          "subtype": "string",
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "7feffcbc-3958-4930-9f43-22df5341ee92",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "new_column1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "mode": "text",
+          "subtype": "string",
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "c712318c-08a1-402a-948b-9fe40a68b812",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "new_column2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "mode": "text",
+          "subtype": "string",
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "compositePartitionKey": false,
+          "compositeClusteringKey": false,
+          "GUID": "cb713d11-bdd0-4d47-a428-927c7f4c472c",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "1e59c7fd-ec0f-4ba5-af5f-78b7b553d650"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "collectionUsers": [],
+      "tableIfNotExist": false,
+      "searchIndexIfNotExist": false,
+      "GUID": "3a60b03c-8376-46a5-a065-3a27ea87cf6d",
+      "bucketId": "2e99ed00-9287-11e8-b7ec-6ff3feb0dda1"
     }
   ],
   "buckets": [
@@ -539,7 +620,8 @@
         "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
         "2e924be1-9287-11e8-b7ec-6ff3feb0dda1",
         "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
-        "2e929a02-9287-11e8-b7ec-6ff3feb0dda1"
+        "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
+        "3a60b03c-8376-46a5-a065-3a27ea87cf6d"
       ],
       "backgroundColor": {
         "r": 119,
@@ -751,7 +833,11 @@
     "2e99ed00-9287-11e8-b7ec-6ff3feb0dda1": "videodb",
     "467d7ef0-9287-11e8-b7ec-6ff3feb0dda1": "fk videos.videoid to video_event.videoid",
     "4bc08ab0-9287-11e8-b7ec-6ff3feb0dda1": "fk video_users.username to video_event.username",
-    "4f390fa0-9287-11e8-b7ec-6ff3feb0dda1": "fk videos.videoid to video_rating.videoid"
+    "4f390fa0-9287-11e8-b7ec-6ff3feb0dda1": "fk videos.videoid to video_rating.videoid",
+    "3a60b03c-8376-46a5-a065-3a27ea87cf6d": "new_table",
+    "7feffcbc-3958-4930-9f43-22df5341ee92": "new_column",
+    "c712318c-08a1-402a-948b-9fe40a68b812": "new_column1",
+    "cb713d11-bdd0-4d47-a428-927c7f4c472c": "new_column2"
   },
   "definitions": {
     "type": "definitions",
@@ -775,7 +861,7 @@
   "appTarget": "CASSANDRA",
   "creationTS": "2018-07-28T16:54:02.126Z",
   "GUID": "d461eae0-9286-11e8-b7ec-6ff3feb0dda1",
-  "lastModifTS": "2025-04-08T13:09:27.431Z",
+  "lastModifTS": "2025-04-08T13:09:46.034Z",
   "persistenceSchemaVersion": "8",
   "description": "",
   "comments": "",
@@ -829,6 +915,14 @@
             "y": 1040,
             "width": 301,
             "height": 159,
+            "color": {}
+          },
+          {
+            "GUID": "3a60b03c-8376-46a5-a065-3a27ea87cf6d",
+            "x": 1377,
+            "y": 1379,
+            "width": 202,
+            "height": 87,
             "color": {}
           }
         ],
