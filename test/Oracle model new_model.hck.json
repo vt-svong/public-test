@@ -208,6 +208,109 @@
       "immutable": false,
       "GUID": "2f8d193c-ddda-4bd0-9b77-3c2eeea975e6",
       "bucketId": "2ea6fbcc-3709-46aa-9d74-6aa92182761b"
+    },
+    {
+      "collectionName": "new_table2",
+      "type": "object",
+      "properties": [
+        {
+          "name": "new_column",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar2",
+          "length": 20,
+          "subtype": "string",
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "partitionKey",
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "partitionKey": false,
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "8113218c-9745-4d51-9314-2e32df2f2a0d",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "new_column1",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar2",
+          "length": 20,
+          "subtype": "string",
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "partitionKey",
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "partitionKey": false,
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "47372462-0e38-49ad-9fa5-b0519841f69a",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        },
+        {
+          "name": "new_column2",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar2",
+          "length": 20,
+          "subtype": "string",
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositeKey": [
+            "partitionKey",
+            "compositePartitionKey",
+            "compositePrimaryKey",
+            "compositeUniqueKey"
+          ],
+          "partitionKey": false,
+          "compositePartitionKey": false,
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "GUID": "124e3db3-edaa-44d0-aded-5e1791edd3f3",
+          "error": {
+            "name": false,
+            "code": false
+          }
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "f582129f-b6cf-4a01-b69d-cc2df0a1e3ed"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "temporary": false,
+      "temporaryType": "global",
+      "sharded": false,
+      "duplicated": false,
+      "immutable": false,
+      "GUID": "5e49e03e-265b-40a4-bcf6-ac9979c4c0bb"
     }
   ],
   "buckets": [
@@ -291,7 +394,11 @@
     "7a2ee2a3-5268-41a4-bee0-f2c605710c2c": "new_column2",
     "b9433f1f-2cb2-458e-96e3-bdb218ef6903": "new_view",
     "0e6b502b-ce86-49df-a95f-5e5d5e565d6e": "new_column",
-    "e2241b41-1472-400a-8d96-7e41dc93ec64": "new_column1"
+    "e2241b41-1472-400a-8d96-7e41dc93ec64": "new_column1",
+    "5e49e03e-265b-40a4-bcf6-ac9979c4c0bb": "new_table2",
+    "8113218c-9745-4d51-9314-2e32df2f2a0d": "new_column",
+    "47372462-0e38-49ad-9fa5-b0519841f69a": "new_column1",
+    "124e3db3-edaa-44d0-aded-5e1791edd3f3": "new_column2"
   },
   "definitions": {
     "type": "definitions",
@@ -316,7 +423,7 @@
   "creationTS": "2025-04-08T12:41:18.910Z",
   "GUID": "f6e94946-776b-4069-933d-4b2ffb2c4987",
   "isLineageEnabled": false,
-  "lastModifTS": "2025-04-08T12:42:21.803Z",
+  "lastModifTS": "2025-04-08T12:42:33.913Z",
   "persistenceSchemaVersion": "8",
   "isCreatedByPlugin": true,
   "pluginInformation": {
@@ -327,6 +434,7 @@
   "applicationInformation": {
     "version": "8.1.2"
   },
+  "hackoladeMeta": {},
   "settings": {
     "centralPane": {
       "dbLevel": {
@@ -353,6 +461,14 @@
             "y": 1179,
             "width": 250,
             "height": 69,
+            "color": {}
+          },
+          {
+            "GUID": "5e49e03e-265b-40a4-bcf6-ac9979c4c0bb",
+            "x": 1040,
+            "y": 1040,
+            "width": 250,
+            "height": 87,
             "color": {}
           }
         ],
