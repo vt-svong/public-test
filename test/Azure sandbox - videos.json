@@ -1,903 +1,901 @@
 {
-    "modelName": "New model",
-    "collections": [
+  "modelName": "New model",
+  "collections": [
+    {
+      "bucketId": "2e99ed00-9287-11e8-b7ec-6ff3feb0dda1",
+      "properties": [
         {
-            "bucketId": "2e99ed00-9287-11e8-b7ec-6ff3feb0dda1",
-            "properties": [
-                {
-                    "mode": "text",
-                    "type": "string",
-                    "name": "event",
-                    "primaryKey": true,
-                    "childType": "char",
-                    "GUID": "2e9224d3-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "required": true,
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "compositeClusteringKey": true,
-                    "isActivated": true
-                },
-                {
-                    "type": "string",
-                    "name": "event_timestamp",
-                    "primaryKey": true,
-                    "childType": "char",
-                    "GUID": "2e9224d4-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "required": true,
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "compositeClusteringKey": true,
-                    "isActivated": true,
-                    "fakerFunction": "faker.date.past()",
-                    "error": {}
-                },
-                {
-                    "mode": "text",
-                    "type": "string",
-                    "name": "username",
-                    "primaryKey": true,
-                    "childType": "char",
-                    "GUID": "2e9224d5-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "4bc08ab0-9287-11e8-b7ec-6ff3feb0dda1",
-                    "foreignCollection": "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
-                    "foreignField": [
-                        "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
-                        "2e9272f9-9287-11e8-b7ec-6ff3feb0dda1"
-                    ],
-                    "required": true,
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "compositePartitionKey": true,
-                    "isActivated": true,
-                    "fakerFunction": "faker.internet.userName()",
-                    "error": {}
-                },
-                {
-                    "mode": "bigint",
-                    "type": "numeric",
-                    "name": "video_timestamp",
-                    "primaryKey": false,
-                    "childType": "numeric",
-                    "GUID": "2e9224d6-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "isActivated": true,
-                    "fakerFunction": "faker.date.past()",
-                    "error": {}
-                },
-                {
-                    "name": "videoid",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "primaryKey": true,
-                    "childType": "uuid",
-                    "type": "string",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "compositePartitionKey": true,
-                    "required": true,
-                    "GUID": "2e9224d7-9287-11e8-b7ec-6ff3feb0dda1",
-                    "parentRelationship": "467d7ef0-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "Foreign Key",
-                    "fakerFunction": "faker.datatype.uuid()",
-                    "error": {},
-                    "foreignCollection": "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
-                    "foreignField": [
-                        "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
-                        "2e929a08-9287-11e8-b7ec-6ff3feb0dda1"
-                    ]
-                }
-            ],
-            "type": "object",
-            "GUID": "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
-            "definitions": {
-                "GUID": "2e9224d1-9287-11e8-b7ec-6ff3feb0dda1",
-                "properties": [],
-                "type": "definitions"
-            },
-            "collectionName": "video_event",
-            "compositePartitionKey": [
-                {
-                    "keyId": "2e9224d7-9287-11e8-b7ec-6ff3feb0dda1",
-                    "type": ""
-                },
-                {
-                    "keyId": "2e9224d5-9287-11e8-b7ec-6ff3feb0dda1",
-                    "type": ""
-                }
-            ],
-            "compositeClusteringKey": [
-                {
-                    "keyId": "2e9224d4-9287-11e8-b7ec-6ff3feb0dda1",
-                    "type": "descending"
-                },
-                {
-                    "keyId": "2e9224d3-9287-11e8-b7ec-6ff3feb0dda1",
-                    "type": "ascending"
-                }
-            ],
-            "collation": {},
-            "tableOptions": {
-                "GUID": "71a66aa0-b986-11eb-a0ff-ab8ba21162b6"
-            },
-            "isActivated": true,
-            "tableIfNotExist": true,
-            "additionalProperties": true,
-            "hackoladeMeta": {
-                "validationErrors": {}
-            }
+          "mode": "text",
+          "type": "string",
+          "name": "event",
+          "primaryKey": true,
+          "childType": "char",
+          "GUID": "2e9224d3-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "required": true,
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "compositeClusteringKey": true,
+          "isActivated": true
         },
         {
-            "bucketId": "2e99ed00-9287-11e8-b7ec-6ff3feb0dda1",
-            "properties": [
-                {
-                    "mode": "counter",
-                    "type": "numeric",
-                    "name": "rating_counter",
-                    "primaryKey": false,
-                    "childType": "numeric",
-                    "GUID": "2e924be2-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "isActivated": true,
-                    "minimum": 0,
-                    "error": {}
-                },
-                {
-                    "mode": "counter",
-                    "type": "numeric",
-                    "name": "rating_total",
-                    "primaryKey": false,
-                    "childType": "numeric",
-                    "GUID": "2e924be3-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "isActivated": true,
-                    "minimum": 0,
-                    "error": {}
-                },
-                {
-                    "name": "videoid",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "primaryKey": true,
-                    "childType": "uuid",
-                    "type": "string",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "compositePartitionKey": true,
-                    "required": true,
-                    "GUID": "2e924be4-9287-11e8-b7ec-6ff3feb0dda1",
-                    "parentRelationship": "4f390fa0-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "Foreign Key",
-                    "fakerFunction": "faker.datatype.uuid()",
-                    "error": {},
-                    "foreignCollection": "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
-                    "foreignField": [
-                        "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
-                        "2e929a08-9287-11e8-b7ec-6ff3feb0dda1"
-                    ]
-                }
-            ],
-            "type": "object",
-            "GUID": "2e924be1-9287-11e8-b7ec-6ff3feb0dda1",
-            "definitions": {
-                "GUID": "2e924be0-9287-11e8-b7ec-6ff3feb0dda1",
-                "properties": [],
-                "type": "definitions"
-            },
-            "collectionName": "video_rating",
-            "compositePartitionKey": [
-                {
-                    "keyId": "2e924be4-9287-11e8-b7ec-6ff3feb0dda1",
-                    "type": ""
-                }
-            ],
-            "collation": {},
-            "tableOptions": {
-                "GUID": "71a691b0-b986-11eb-a0ff-ab8ba21162b6"
-            },
-            "isActivated": true,
-            "tableIfNotExist": false,
-            "additionalProperties": true,
-            "hackoladeMeta": {
-                "validationErrors": {}
-            },
-            "SecIndxs": []
+          "type": "string",
+          "name": "event_timestamp",
+          "primaryKey": true,
+          "childType": "char",
+          "GUID": "2e9224d4-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "required": true,
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "compositeClusteringKey": true,
+          "isActivated": true,
+          "fakerFunction": "faker.date.past()",
+          "error": {}
         },
         {
-            "bucketId": "2e99ed00-9287-11e8-b7ec-6ff3feb0dda1",
-            "properties": [
-                {
-                    "frozen": true,
-                    "type": "string",
-                    "name": "address",
-                    "primaryKey": false,
-                    "childType": "char",
-                    "GUID": "2e9272f3-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "mode": "text",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "isActivated": true
-                },
-                {
-                    "type": "string",
-                    "name": "created_date",
-                    "primaryKey": false,
-                    "childType": "char",
-                    "GUID": "2e9272f4-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "isActivated": true,
-                    "fakerFunction": "faker.date.past()",
-                    "error": {}
-                },
-                {
-                    "subtype": "list<str>",
-                    "type": "array",
-                    "name": "email",
-                    "primaryKey": false,
-                    "childType": "tuple",
-                    "additionalItems": true,
-                    "GUID": "2e9272f5-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "properties": [
-                        {
-                            "hackoladeMeta": {},
-                            "isActivated": true,
-                            "primaryKey": false,
-                            "mode": "text",
-                            "subtype": "string",
-                            "childType": "char",
-                            "type": "string",
-                            "compositeKey": [
-                                "compositePartitionKey",
-                                "compositeClusteringKey"
-                            ],
-                            "compositePartitionKey": false,
-                            "compositeClusteringKey": false,
-                            "GUID": "09778f60-d369-11ec-adc4-432dcbbfc12a",
-                            "arrayItem": true,
-                            "fakerFunction": "faker.internet.email()",
-                            "error": {}
-                        }
-                    ],
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "isActivated": true
-                },
-                {
-                    "mode": "text",
-                    "type": "string",
-                    "name": "firstname",
-                    "primaryKey": false,
-                    "childType": "char",
-                    "GUID": "2e9272f6-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "isActivated": true
-                },
-                {
-                    "mode": "text",
-                    "type": "string",
-                    "name": "lastname",
-                    "primaryKey": false,
-                    "childType": "char",
-                    "GUID": "2e9272f7-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "isActivated": true
-                },
-                {
-                    "mode": "text",
-                    "type": "string",
-                    "name": "password",
-                    "primaryKey": false,
-                    "childType": "char",
-                    "GUID": "2e9272f8-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "isActivated": true,
-                    "fakerFunction": "faker.internet.password(20)",
-                    "error": {}
-                },
-                {
-                    "mode": "text",
-                    "type": "string",
-                    "name": "username",
-                    "primaryKey": true,
-                    "childType": "char",
-                    "GUID": "2e9272f9-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "childRelationships": [
-                        "4bc08ab0-9287-11e8-b7ec-6ff3feb0dda1"
-                    ],
-                    "required": true,
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "compositePartitionKey": true,
-                    "isActivated": true,
-                    "fakerFunction": "faker.internet.userName()",
-                    "error": {}
-                }
-            ],
-            "type": "object",
-            "GUID": "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
-            "definitions": {
-                "GUID": "2e9272f1-9287-11e8-b7ec-6ff3feb0dda1",
-                "properties": [],
-                "type": "definitions"
-            },
-            "collectionName": "video_users",
-            "compositePartitionKey": [
-                {
-                    "keyId": "2e9272f9-9287-11e8-b7ec-6ff3feb0dda1",
-                    "type": ""
-                }
-            ],
-            "collation": {},
-            "tableOptions": {
-                "GUID": "71a6b8c0-b986-11eb-a0ff-ab8ba21162b6"
-            },
-            "isActivated": true,
-            "tableIfNotExist": true,
-            "additionalProperties": true,
-            "hackoladeMeta": {
-                "validationErrors": {}
-            }
+          "mode": "text",
+          "type": "string",
+          "name": "username",
+          "primaryKey": true,
+          "childType": "char",
+          "GUID": "2e9224d5-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "Foreign Key",
+          "parentRelationship": "4bc08ab0-9287-11e8-b7ec-6ff3feb0dda1",
+          "foreignCollection": "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
+          "foreignField": [
+            "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
+            "2e9272f9-9287-11e8-b7ec-6ff3feb0dda1"
+          ],
+          "required": true,
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "compositePartitionKey": true,
+          "isActivated": true,
+          "fakerFunction": "faker.internet.userName()",
+          "error": {}
         },
         {
-            "bucketId": "2e99ed00-9287-11e8-b7ec-6ff3feb0dda1",
-            "properties": [
-                {
-                    "mode": "text",
-                    "type": "string",
-                    "name": "description",
-                    "primaryKey": false,
-                    "childType": "char",
-                    "GUID": "2e929a03-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "isActivated": true
-                },
-                {
-                    "keyType": "char",
-                    "subtype": "map<str>",
-                    "type": "document",
-                    "name": "location",
-                    "primaryKey": false,
-                    "childType": "map",
-                    "GUID": "2e929a04-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "properties": [],
-                    "additionalProperties": false,
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "isActivated": true
-                },
-                {
-                    "subtype": "set<str>",
-                    "type": "array",
-                    "name": "tags",
-                    "primaryKey": false,
-                    "childType": "tuple",
-                    "additionalItems": true,
-                    "GUID": "2e929a05-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "properties": [],
-                    "additionalProperties": false,
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "isActivated": true
-                },
-                {
-                    "type": "string",
-                    "name": "upload_date",
-                    "primaryKey": false,
-                    "childType": "char",
-                    "GUID": "2e929a06-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "isActivated": true,
-                    "fakerFunction": "faker.date.past()",
-                    "error": {}
-                },
-                {
-                    "mode": "text",
-                    "type": "string",
-                    "name": "username",
-                    "primaryKey": false,
-                    "childType": "char",
-                    "GUID": "2e929a07-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "isActivated": true,
-                    "fakerFunction": "faker.internet.userName()",
-                    "error": {}
-                },
-                {
-                    "name": "videoid",
-                    "hackoladeMeta": {},
-                    "isActivated": true,
-                    "primaryKey": true,
-                    "childType": "uuid",
-                    "type": "string",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "compositePartitionKey": true,
-                    "required": true,
-                    "GUID": "2e929a08-9287-11e8-b7ec-6ff3feb0dda1",
-                    "childRelationships": [
-                        "467d7ef0-9287-11e8-b7ec-6ff3feb0dda1",
-                        "4f390fa0-9287-11e8-b7ec-6ff3feb0dda1"
-                    ],
-                    "relationshipType": "",
-                    "fakerFunction": "faker.datatype.uuid()",
-                    "error": {}
-                },
-                {
-                    "mode": "text",
-                    "type": "string",
-                    "name": "videoname",
-                    "primaryKey": false,
-                    "childType": "char",
-                    "GUID": "2e929a09-9287-11e8-b7ec-6ff3feb0dda1",
-                    "relationshipType": "",
-                    "compositeKey": [
-                        "compositePartitionKey",
-                        "compositeClusteringKey"
-                    ],
-                    "isActivated": true
-                }
-            ],
-            "type": "object",
-            "GUID": "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
-            "definitions": {
-                "GUID": "2e929a01-9287-11e8-b7ec-6ff3feb0dda1",
-                "properties": [],
-                "type": "definitions"
-            },
-            "collectionName": "videos",
-            "compositePartitionKey": [
-                {
-                    "keyId": "2e929a08-9287-11e8-b7ec-6ff3feb0dda1",
-                    "type": ""
-                }
-            ],
-            "collation": {},
-            "tableOptions": {
-                "GUID": "71a6b8c1-b986-11eb-a0ff-ab8ba21162b6"
-            },
-            "isActivated": true,
-            "tableIfNotExist": true,
-            "additionalProperties": true,
-            "hackoladeMeta": {
-                "validationErrors": {}
-            }
+          "mode": "bigint",
+          "type": "numeric",
+          "name": "video_timestamp",
+          "primaryKey": false,
+          "childType": "numeric",
+          "GUID": "2e9224d6-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "isActivated": true,
+          "fakerFunction": "faker.date.past()",
+          "error": {}
+        },
+        {
+          "name": "videoid",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "childType": "uuid",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "compositePartitionKey": true,
+          "required": true,
+          "GUID": "2e9224d7-9287-11e8-b7ec-6ff3feb0dda1",
+          "parentRelationship": "467d7ef0-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "Foreign Key",
+          "fakerFunction": "faker.datatype.uuid()",
+          "error": {},
+          "foreignCollection": "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
+          "foreignField": [
+            "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
+            "2e929a08-9287-11e8-b7ec-6ff3feb0dda1"
+          ]
         }
-    ],
-    "buckets": [
-        {
-            "GUID": "2e99ed00-9287-11e8-b7ec-6ff3feb0dda1",
-            "name": "videodb",
-            "type": "bucket",
-            "collectionIds": [
-                "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
-                "2e924be1-9287-11e8-b7ec-6ff3feb0dda1",
-                "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
-                "2e929a02-9287-11e8-b7ec-6ff3feb0dda1"
-            ],
-            "backgroundColor": {
-                "r": 119,
-                "g": 119,
-                "b": 119,
-                "a": 1
-            },
-            "show": true,
-            "indexes": [],
-            "replStrategy": "SimpleStrategy",
-            "addFieldsToBucket": true,
-            "isPlugin": true,
-            "addToCqlScript": true,
-            "isActivated": true,
-            "keyspaceIfNotExist": false,
-            "hackoladeMeta": {
-                "validationErrors": {}
-            }
-        }
-    ],
-    "views": [],
-    "relationships": [
-        {
-            "GUID": "467d7ef0-9287-11e8-b7ec-6ff3feb0dda1",
-            "name": "fk videos.videoid to video_event.videoid",
-            "description": "",
-            "comments": "",
-            "relationshipType": "Foreign Key",
-            "parentCollection": "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
-            "parentField": [
-                [
-                    "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
-                    "2e929a08-9287-11e8-b7ec-6ff3feb0dda1"
-                ]
-            ],
-            "parentCardinality": "1",
-            "childCollection": "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
-            "childField": [
-                [
-                    "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
-                    "2e9224d7-9287-11e8-b7ec-6ff3feb0dda1"
-                ]
-            ],
-            "childCardinality": "0..n",
-            "hackoladeStyles": {
-                "GUID": "74bb1ea7-9fd4-443f-89b0-ac45d03e2a01",
-                "autoPositioning": true,
-                "type": "Orthogonal",
-                "thickness": 2,
-                "color": "#79c4ff",
-                "dataType": "",
-                "shape": [
-                    {
-                        "x": 1464,
-                        "y": 1237
-                    },
-                    {
-                        "x": 1402.5,
-                        "y": 1237
-                    },
-                    {
-                        "x": 1402.5,
-                        "y": 1119.5
-                    },
-                    {
-                        "x": 1341,
-                        "y": 1119.5
-                    }
-                ],
-                "sides": [
-                    "left",
-                    "right"
-                ]
-            },
-            "isActivated": true
-        },
-        {
-            "GUID": "4bc08ab0-9287-11e8-b7ec-6ff3feb0dda1",
-            "name": "fk video_users.username to video_event.username",
-            "description": "",
-            "comments": "",
-            "relationshipType": "Foreign Key",
-            "parentCollection": "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
-            "parentField": [
-                [
-                    "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
-                    "2e9272f9-9287-11e8-b7ec-6ff3feb0dda1"
-                ]
-            ],
-            "parentCardinality": "1",
-            "childCollection": "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
-            "childField": [
-                [
-                    "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
-                    "2e9224d5-9287-11e8-b7ec-6ff3feb0dda1"
-                ]
-            ],
-            "childCardinality": "0..n",
-            "hackoladeStyles": {
-                "GUID": "513364ee-bd41-44e8-9ba4-4e1e50560589",
-                "autoPositioning": true,
-                "type": "Orthogonal",
-                "thickness": 2,
-                "color": "#79c4ff",
-                "dataType": "",
-                "shape": [
-                    {
-                        "x": 1464,
-                        "y": 1278
-                    },
-                    {
-                        "x": 1395.5,
-                        "y": 1278
-                    },
-                    {
-                        "x": 1395.5,
-                        "y": 1316.5
-                    },
-                    {
-                        "x": 1327,
-                        "y": 1316.5
-                    }
-                ],
-                "sides": [
-                    "left",
-                    "right"
-                ]
-            },
-            "isActivated": true
-        },
-        {
-            "GUID": "4f390fa0-9287-11e8-b7ec-6ff3feb0dda1",
-            "name": "fk videos.videoid to video_rating.videoid",
-            "description": "",
-            "comments": "",
-            "relationshipType": "Foreign Key",
-            "parentCollection": "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
-            "parentField": [
-                [
-                    "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
-                    "2e929a08-9287-11e8-b7ec-6ff3feb0dda1"
-                ]
-            ],
-            "parentCardinality": "1",
-            "childCollection": "2e924be1-9287-11e8-b7ec-6ff3feb0dda1",
-            "childField": [
-                [
-                    "2e924be1-9287-11e8-b7ec-6ff3feb0dda1",
-                    "2e924be4-9287-11e8-b7ec-6ff3feb0dda1"
-                ]
-            ],
-            "childCardinality": "0..n",
-            "hackoladeStyles": {
-                "GUID": "caf11b81-5782-4901-a565-53158b4016e2",
-                "autoPositioning": false,
-                "type": "Orthogonal",
-                "thickness": 2,
-                "color": "#79c4ff",
-                "dataType": "",
-                "shape": [
-                    {
-                        "x": 1454.9676616915422,
-                        "y": 1075.7773631840796
-                    },
-                    {
-                        "x": 1341,
-                        "y": 1075.7773631840796
-                    }
-                ],
-                "sides": [
-                    "left",
-                    "right"
-                ]
-            },
-            "isActivated": true
-        }
-    ],
-    "users": [],
-    "diagramViews": [],
-    "idToNameHashTable": {
-        "dd80d140-9286-11e8-b7ec-6ff3feb0dda1": "videodb",
-        "22a74d30-9287-11e8-b7ec-6ff3feb0dda1": "videodb",
-        "2e9224d3-9287-11e8-b7ec-6ff3feb0dda1": "event",
-        "2e9224d4-9287-11e8-b7ec-6ff3feb0dda1": "event_timestamp",
-        "2e9224d5-9287-11e8-b7ec-6ff3feb0dda1": "username",
-        "2e9224d6-9287-11e8-b7ec-6ff3feb0dda1": "video_timestamp",
-        "2e9224d7-9287-11e8-b7ec-6ff3feb0dda1": "videoid",
-        "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1": "video_event",
-        "2e924be2-9287-11e8-b7ec-6ff3feb0dda1": "rating_counter",
-        "2e924be3-9287-11e8-b7ec-6ff3feb0dda1": "rating_total",
-        "2e924be4-9287-11e8-b7ec-6ff3feb0dda1": "videoid",
-        "2e924be1-9287-11e8-b7ec-6ff3feb0dda1": "video_rating",
-        "2e9272f3-9287-11e8-b7ec-6ff3feb0dda1": "address",
-        "2e9272f4-9287-11e8-b7ec-6ff3feb0dda1": "created_date",
-        "2e9272f5-9287-11e8-b7ec-6ff3feb0dda1": "email",
-        "2e9272f6-9287-11e8-b7ec-6ff3feb0dda1": "firstname",
-        "2e9272f7-9287-11e8-b7ec-6ff3feb0dda1": "lastname",
-        "2e9272f8-9287-11e8-b7ec-6ff3feb0dda1": "password",
-        "2e9272f9-9287-11e8-b7ec-6ff3feb0dda1": "username",
-        "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1": "video_users",
-        "2e929a03-9287-11e8-b7ec-6ff3feb0dda1": "description",
-        "2e929a04-9287-11e8-b7ec-6ff3feb0dda1": "location",
-        "2e929a05-9287-11e8-b7ec-6ff3feb0dda1": "tags",
-        "2e929a06-9287-11e8-b7ec-6ff3feb0dda1": "upload_date",
-        "2e929a07-9287-11e8-b7ec-6ff3feb0dda1": "username",
-        "2e929a08-9287-11e8-b7ec-6ff3feb0dda1": "videoid",
-        "2e929a09-9287-11e8-b7ec-6ff3feb0dda1": "videoname",
-        "2e929a02-9287-11e8-b7ec-6ff3feb0dda1": "videos",
-        "2e99ed00-9287-11e8-b7ec-6ff3feb0dda1": "videodb",
-        "467d7ef0-9287-11e8-b7ec-6ff3feb0dda1": "fk videos.videoid to video_event.videoid",
-        "4bc08ab0-9287-11e8-b7ec-6ff3feb0dda1": "fk video_users.username to video_event.username",
-        "4f390fa0-9287-11e8-b7ec-6ff3feb0dda1": "fk videos.videoid to video_rating.videoid"
-    },
-    "definitions": {
-        "type": "definitions",
+      ],
+      "type": "object",
+      "GUID": "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
+      "definitions": {
+        "GUID": "2e9224d1-9287-11e8-b7ec-6ff3feb0dda1",
         "properties": [],
-        "GUID": "d461eae1-9286-11e8-b7ec-6ff3feb0dda1"
-    },
-    "polyglotDefinitions": {
-        "type": "polyglotDefinitions",
-        "properties": [],
-        "GUID": "5ab589a2-35a7-11ec-bc49-9db80bc426c4"
-    },
-    "externalDefinitions": {
-        "type": "externalDefinitions",
-        "properties": [],
-        "GUID": "d461eae2-9286-11e8-b7ec-6ff3feb0dda1"
-    },
-    "sources": [],
-    "decorativeSymbols": [],
-    "dbVersion": "4.x",
-    "dbVendor": "Cassandra",
-    "appTarget": "CASSANDRA",
-    "creationTS": "2018-07-28T16:54:02.126Z",
-    "GUID": "d461eae0-9286-11e8-b7ec-6ff3feb0dda1",
-    "lastModifTS": "2023-12-11T19:24:05.239Z",
-    "persistenceSchemaVersion": "7",
-    "description": "",
-    "comments": "",
-    "author": "",
-    "version": "",
-    "isCreatedByPlugin": true,
-    "pluginInformation": {
-        "pluginName": "Cassandra",
-        "pluginVersion": "0.1.131",
-        "pluginEngineVersion": "1.0.0"
-    },
-    "hackoladeMeta": {
-        "validationErrors": {
-            "dbVersion": false
-        }
-    },
-    "applicationInformation": {
-        "version": "7.0.3"
-    },
-    "settings": {
-        "centralPane": {
-            "dbLevel": {
-                "erd": [
-                    {
-                        "GUID": "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
-                        "x": 1464,
-                        "y": 1196,
-                        "width": 303,
-                        "height": 123,
-                        "color": {}
-                    },
-                    {
-                        "GUID": "2e924be1-9287-11e8-b7ec-6ff3feb0dda1",
-                        "x": 1454.9676616915422,
-                        "y": 1045.516169154229,
-                        "width": 300,
-                        "height": 87,
-                        "color": {}
-                    },
-                    {
-                        "GUID": "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
-                        "x": 1055,
-                        "y": 1228,
-                        "width": 272,
-                        "height": 177,
-                        "color": {}
-                    },
-                    {
-                        "GUID": "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
-                        "x": 1040,
-                        "y": 1040,
-                        "width": 301,
-                        "height": 159,
-                        "color": {}
-                    }
-                ],
-                "erdDefinitions": {
-                    "erd": [],
-                    "rootPath": [],
-                    "entities": [],
-                    "decorativeSymbols": []
-                },
-                "buckets": [
-                    {
-                        "x": 1000,
-                        "y": 1000,
-                        "GUID": "2e99ed00-9287-11e8-b7ec-6ff3feb0dda1"
-                    }
-                ],
-                "collapsedNodes": [],
-                "activeRelationship": "",
-                "activeRelationshipFields": {
-                    "childField": [],
-                    "parentField": []
-                },
-                "selectedCollections": [],
-                "displayColorPicker": false,
-                "graphView": {
-                    "erd": [],
-                    "buckets": [],
-                    "decorativeSymbols": [],
-                    "forceLayout": true,
-                    "defaultLinkLength": 300
-                },
-                "diagramViews": [],
-                "decorativeSymbols": [],
-                "nestedCollectionsLayout": "horizontal",
-                "options": [
-                    {
-                        "GUID": "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
-                        "autoWidth": false,
-                        "autoHeight": false
-                    },
-                    {
-                        "GUID": "2e924be1-9287-11e8-b7ec-6ff3feb0dda1",
-                        "autoWidth": false,
-                        "autoHeight": false
-                    },
-                    {
-                        "GUID": "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
-                        "autoWidth": false,
-                        "autoHeight": false
-                    },
-                    {
-                        "GUID": "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
-                        "autoWidth": false,
-                        "autoHeight": false
-                    }
-                ],
-                "relationshipUpdateDisabled": false,
-                "displayOptions": {
-                    "dndHandles": false
-                }
-            },
-            "collectionLevel": {},
-            "changed": false
+        "type": "definitions"
+      },
+      "collectionName": "video_event",
+      "compositePartitionKey": [
+        {
+          "keyId": "2e9224d7-9287-11e8-b7ec-6ff3feb0dda1",
+          "type": ""
         },
-        "dtDiagram": {
-            "collapsedNodes": [],
-            "shouldDistributeCollections": false
+        {
+          "keyId": "2e9224d5-9287-11e8-b7ec-6ff3feb0dda1",
+          "type": ""
         }
+      ],
+      "compositeClusteringKey": [
+        {
+          "keyId": "2e9224d4-9287-11e8-b7ec-6ff3feb0dda1",
+          "type": "descending"
+        },
+        {
+          "keyId": "2e9224d3-9287-11e8-b7ec-6ff3feb0dda1",
+          "type": "ascending"
+        }
+      ],
+      "collation": {},
+      "tableOptions": {
+        "GUID": "71a66aa0-b986-11eb-a0ff-ab8ba21162b6"
+      },
+      "isActivated": true,
+      "tableIfNotExist": true,
+      "additionalProperties": true,
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "bucketId": "2e99ed00-9287-11e8-b7ec-6ff3feb0dda1",
+      "properties": [
+        {
+          "mode": "counter",
+          "type": "numeric",
+          "name": "rating_counter",
+          "primaryKey": false,
+          "childType": "numeric",
+          "GUID": "2e924be2-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "isActivated": true,
+          "minimum": 0,
+          "error": {}
+        },
+        {
+          "mode": "counter",
+          "type": "numeric",
+          "name": "rating_total",
+          "primaryKey": false,
+          "childType": "numeric",
+          "GUID": "2e924be3-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "isActivated": true,
+          "minimum": 0,
+          "error": {}
+        },
+        {
+          "name": "videoid",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "childType": "uuid",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "compositePartitionKey": true,
+          "required": true,
+          "GUID": "2e924be4-9287-11e8-b7ec-6ff3feb0dda1",
+          "parentRelationship": "4f390fa0-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "Foreign Key",
+          "fakerFunction": "faker.datatype.uuid()",
+          "error": {},
+          "foreignCollection": "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
+          "foreignField": [
+            "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
+            "2e929a08-9287-11e8-b7ec-6ff3feb0dda1"
+          ]
+        }
+      ],
+      "type": "object",
+      "GUID": "2e924be1-9287-11e8-b7ec-6ff3feb0dda1",
+      "definitions": {
+        "GUID": "2e924be0-9287-11e8-b7ec-6ff3feb0dda1",
+        "properties": [],
+        "type": "definitions"
+      },
+      "collectionName": "video_rating",
+      "compositePartitionKey": [
+        {
+          "keyId": "2e924be4-9287-11e8-b7ec-6ff3feb0dda1",
+          "type": ""
+        }
+      ],
+      "collation": {},
+      "tableOptions": {
+        "GUID": "71a691b0-b986-11eb-a0ff-ab8ba21162b6"
+      },
+      "isActivated": true,
+      "tableIfNotExist": false,
+      "additionalProperties": true,
+      "hackoladeMeta": {
+        "validationErrors": {}
+      },
+      "SecIndxs": []
+    },
+    {
+      "bucketId": "2e99ed00-9287-11e8-b7ec-6ff3feb0dda1",
+      "properties": [
+        {
+          "frozen": true,
+          "type": "string",
+          "name": "address",
+          "primaryKey": false,
+          "childType": "char",
+          "GUID": "2e9272f3-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "mode": "text",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "created_date",
+          "primaryKey": false,
+          "childType": "char",
+          "GUID": "2e9272f4-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "isActivated": true,
+          "fakerFunction": "faker.date.past()",
+          "error": {}
+        },
+        {
+          "subtype": "list<str>",
+          "type": "array",
+          "name": "email",
+          "primaryKey": false,
+          "childType": "tuple",
+          "additionalItems": true,
+          "GUID": "2e9272f5-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "properties": [
+            {
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "primaryKey": false,
+              "mode": "text",
+              "subtype": "string",
+              "childType": "char",
+              "type": "string",
+              "compositeKey": [
+                "compositePartitionKey",
+                "compositeClusteringKey"
+              ],
+              "GUID": "09778f60-d369-11ec-adc4-432dcbbfc12a",
+              "arrayItem": true,
+              "fakerFunction": "faker.internet.email()",
+              "error": {}
+            }
+          ],
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "isActivated": true
+        },
+        {
+          "mode": "text",
+          "type": "string",
+          "name": "firstname",
+          "primaryKey": false,
+          "childType": "char",
+          "GUID": "2e9272f6-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "isActivated": true
+        },
+        {
+          "mode": "text",
+          "type": "string",
+          "name": "lastname",
+          "primaryKey": false,
+          "childType": "char",
+          "GUID": "2e9272f7-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "isActivated": true
+        },
+        {
+          "mode": "text",
+          "type": "string",
+          "name": "password",
+          "primaryKey": false,
+          "childType": "char",
+          "GUID": "2e9272f8-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "isActivated": true,
+          "fakerFunction": "faker.internet.password(20)",
+          "error": {}
+        },
+        {
+          "mode": "text",
+          "type": "string",
+          "name": "username",
+          "primaryKey": true,
+          "childType": "char",
+          "GUID": "2e9272f9-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "childRelationships": [
+            "4bc08ab0-9287-11e8-b7ec-6ff3feb0dda1"
+          ],
+          "required": true,
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "compositePartitionKey": true,
+          "isActivated": true,
+          "fakerFunction": "faker.internet.userName()",
+          "error": {}
+        }
+      ],
+      "type": "object",
+      "GUID": "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
+      "definitions": {
+        "GUID": "2e9272f1-9287-11e8-b7ec-6ff3feb0dda1",
+        "properties": [],
+        "type": "definitions"
+      },
+      "collectionName": "video_users",
+      "compositePartitionKey": [
+        {
+          "keyId": "2e9272f9-9287-11e8-b7ec-6ff3feb0dda1",
+          "type": ""
+        }
+      ],
+      "collation": {},
+      "tableOptions": {
+        "GUID": "71a6b8c0-b986-11eb-a0ff-ab8ba21162b6"
+      },
+      "isActivated": true,
+      "tableIfNotExist": true,
+      "additionalProperties": true,
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "bucketId": "2e99ed00-9287-11e8-b7ec-6ff3feb0dda1",
+      "properties": [
+        {
+          "mode": "text",
+          "type": "string",
+          "name": "description",
+          "primaryKey": false,
+          "childType": "char",
+          "GUID": "2e929a03-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "isActivated": true
+        },
+        {
+          "keyType": "char",
+          "subtype": "map<str>",
+          "type": "document",
+          "name": "location",
+          "primaryKey": false,
+          "childType": "map",
+          "GUID": "2e929a04-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "properties": [],
+          "additionalProperties": false,
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "isActivated": true
+        },
+        {
+          "subtype": "set<str>",
+          "type": "array",
+          "name": "tags",
+          "primaryKey": false,
+          "childType": "tuple",
+          "additionalItems": true,
+          "GUID": "2e929a05-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "properties": [],
+          "additionalProperties": false,
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "isActivated": true
+        },
+        {
+          "type": "string",
+          "name": "upload_date",
+          "primaryKey": false,
+          "childType": "char",
+          "GUID": "2e929a06-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "isActivated": true,
+          "fakerFunction": "faker.date.past()",
+          "error": {}
+        },
+        {
+          "mode": "text",
+          "type": "string",
+          "name": "username",
+          "primaryKey": false,
+          "childType": "char",
+          "GUID": "2e929a07-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "isActivated": true,
+          "fakerFunction": "faker.internet.userName()",
+          "error": {}
+        },
+        {
+          "name": "videoid",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "primaryKey": true,
+          "childType": "uuid",
+          "type": "string",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "compositePartitionKey": true,
+          "required": true,
+          "GUID": "2e929a08-9287-11e8-b7ec-6ff3feb0dda1",
+          "childRelationships": [
+            "467d7ef0-9287-11e8-b7ec-6ff3feb0dda1",
+            "4f390fa0-9287-11e8-b7ec-6ff3feb0dda1"
+          ],
+          "relationshipType": "",
+          "fakerFunction": "faker.datatype.uuid()",
+          "error": {}
+        },
+        {
+          "mode": "text",
+          "type": "string",
+          "name": "videoname",
+          "primaryKey": false,
+          "childType": "char",
+          "GUID": "2e929a09-9287-11e8-b7ec-6ff3feb0dda1",
+          "relationshipType": "",
+          "compositeKey": [
+            "compositePartitionKey",
+            "compositeClusteringKey"
+          ],
+          "isActivated": true
+        }
+      ],
+      "type": "object",
+      "GUID": "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
+      "definitions": {
+        "GUID": "2e929a01-9287-11e8-b7ec-6ff3feb0dda1",
+        "properties": [],
+        "type": "definitions"
+      },
+      "collectionName": "videos",
+      "compositePartitionKey": [
+        {
+          "keyId": "2e929a08-9287-11e8-b7ec-6ff3feb0dda1",
+          "type": ""
+        }
+      ],
+      "collation": {},
+      "tableOptions": {
+        "GUID": "71a6b8c1-b986-11eb-a0ff-ab8ba21162b6"
+      },
+      "isActivated": true,
+      "tableIfNotExist": true,
+      "additionalProperties": true,
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
     }
+  ],
+  "buckets": [
+    {
+      "GUID": "2e99ed00-9287-11e8-b7ec-6ff3feb0dda1",
+      "name": "videodb",
+      "type": "bucket",
+      "collectionIds": [
+        "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
+        "2e924be1-9287-11e8-b7ec-6ff3feb0dda1",
+        "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
+        "2e929a02-9287-11e8-b7ec-6ff3feb0dda1"
+      ],
+      "backgroundColor": {
+        "r": 119,
+        "g": 119,
+        "b": 119,
+        "a": 1
+      },
+      "show": true,
+      "indexes": [],
+      "replStrategy": "SimpleStrategy",
+      "addFieldsToBucket": true,
+      "isPlugin": true,
+      "addToCqlScript": true,
+      "isActivated": true,
+      "keyspaceIfNotExist": false,
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "views": [],
+  "relationships": [
+    {
+      "GUID": "467d7ef0-9287-11e8-b7ec-6ff3feb0dda1",
+      "name": "fk videos.videoid to video_event.videoid",
+      "description": "",
+      "comments": "",
+      "relationshipType": "Foreign Key",
+      "parentCollection": "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
+      "parentField": [
+        [
+          "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
+          "2e929a08-9287-11e8-b7ec-6ff3feb0dda1"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childCollection": "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
+      "childField": [
+        [
+          "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
+          "2e9224d7-9287-11e8-b7ec-6ff3feb0dda1"
+        ]
+      ],
+      "childCardinality": "0..n",
+      "hackoladeStyles": {
+        "GUID": "74bb1ea7-9fd4-443f-89b0-ac45d03e2a01",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1464,
+            "y": 1237
+          },
+          {
+            "x": 1402.5,
+            "y": 1237
+          },
+          {
+            "x": 1402.5,
+            "y": 1119.5
+          },
+          {
+            "x": 1341,
+            "y": 1119.5
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      },
+      "isActivated": true
+    },
+    {
+      "GUID": "4bc08ab0-9287-11e8-b7ec-6ff3feb0dda1",
+      "name": "fk video_users.username to video_event.username",
+      "description": "",
+      "comments": "",
+      "relationshipType": "Foreign Key",
+      "parentCollection": "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
+      "parentField": [
+        [
+          "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
+          "2e9272f9-9287-11e8-b7ec-6ff3feb0dda1"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childCollection": "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
+      "childField": [
+        [
+          "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
+          "2e9224d5-9287-11e8-b7ec-6ff3feb0dda1"
+        ]
+      ],
+      "childCardinality": "0..n",
+      "hackoladeStyles": {
+        "GUID": "513364ee-bd41-44e8-9ba4-4e1e50560589",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1464,
+            "y": 1278
+          },
+          {
+            "x": 1395.5,
+            "y": 1278
+          },
+          {
+            "x": 1395.5,
+            "y": 1316.5
+          },
+          {
+            "x": 1327,
+            "y": 1316.5
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      },
+      "isActivated": true
+    },
+    {
+      "GUID": "4f390fa0-9287-11e8-b7ec-6ff3feb0dda1",
+      "name": "fk videos.videoid to video_rating.videoid",
+      "description": "",
+      "comments": "",
+      "relationshipType": "Foreign Key",
+      "parentCollection": "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
+      "parentField": [
+        [
+          "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
+          "2e929a08-9287-11e8-b7ec-6ff3feb0dda1"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childCollection": "2e924be1-9287-11e8-b7ec-6ff3feb0dda1",
+      "childField": [
+        [
+          "2e924be1-9287-11e8-b7ec-6ff3feb0dda1",
+          "2e924be4-9287-11e8-b7ec-6ff3feb0dda1"
+        ]
+      ],
+      "childCardinality": "0..n",
+      "hackoladeStyles": {
+        "GUID": "caf11b81-5782-4901-a565-53158b4016e2",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1454.9676616915422,
+            "y": 1075.7773631840796
+          },
+          {
+            "x": 1341,
+            "y": 1075.7773631840796
+          }
+        ],
+        "sides": [
+          "left",
+          "right"
+        ]
+      },
+      "isActivated": true
+    }
+  ],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "dd80d140-9286-11e8-b7ec-6ff3feb0dda1": "videodb",
+    "22a74d30-9287-11e8-b7ec-6ff3feb0dda1": "videodb",
+    "2e9224d3-9287-11e8-b7ec-6ff3feb0dda1": "event",
+    "2e9224d4-9287-11e8-b7ec-6ff3feb0dda1": "event_timestamp",
+    "2e9224d5-9287-11e8-b7ec-6ff3feb0dda1": "username",
+    "2e9224d6-9287-11e8-b7ec-6ff3feb0dda1": "video_timestamp",
+    "2e9224d7-9287-11e8-b7ec-6ff3feb0dda1": "videoid",
+    "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1": "video_event",
+    "2e924be2-9287-11e8-b7ec-6ff3feb0dda1": "rating_counter",
+    "2e924be3-9287-11e8-b7ec-6ff3feb0dda1": "rating_total",
+    "2e924be4-9287-11e8-b7ec-6ff3feb0dda1": "videoid",
+    "2e924be1-9287-11e8-b7ec-6ff3feb0dda1": "video_rating",
+    "2e9272f3-9287-11e8-b7ec-6ff3feb0dda1": "address",
+    "2e9272f4-9287-11e8-b7ec-6ff3feb0dda1": "created_date",
+    "2e9272f5-9287-11e8-b7ec-6ff3feb0dda1": "email",
+    "2e9272f6-9287-11e8-b7ec-6ff3feb0dda1": "firstname",
+    "2e9272f7-9287-11e8-b7ec-6ff3feb0dda1": "lastname",
+    "2e9272f8-9287-11e8-b7ec-6ff3feb0dda1": "password",
+    "2e9272f9-9287-11e8-b7ec-6ff3feb0dda1": "username",
+    "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1": "video_users",
+    "2e929a03-9287-11e8-b7ec-6ff3feb0dda1": "description",
+    "2e929a04-9287-11e8-b7ec-6ff3feb0dda1": "location",
+    "2e929a05-9287-11e8-b7ec-6ff3feb0dda1": "tags",
+    "2e929a06-9287-11e8-b7ec-6ff3feb0dda1": "upload_date",
+    "2e929a07-9287-11e8-b7ec-6ff3feb0dda1": "username",
+    "2e929a08-9287-11e8-b7ec-6ff3feb0dda1": "videoid",
+    "2e929a09-9287-11e8-b7ec-6ff3feb0dda1": "videoname",
+    "2e929a02-9287-11e8-b7ec-6ff3feb0dda1": "videos",
+    "2e99ed00-9287-11e8-b7ec-6ff3feb0dda1": "videodb",
+    "467d7ef0-9287-11e8-b7ec-6ff3feb0dda1": "fk videos.videoid to video_event.videoid",
+    "4bc08ab0-9287-11e8-b7ec-6ff3feb0dda1": "fk video_users.username to video_event.username",
+    "4f390fa0-9287-11e8-b7ec-6ff3feb0dda1": "fk videos.videoid to video_rating.videoid"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "d461eae1-9286-11e8-b7ec-6ff3feb0dda1"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "5ab589a2-35a7-11ec-bc49-9db80bc426c4"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "d461eae2-9286-11e8-b7ec-6ff3feb0dda1"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVersion": "4.x",
+  "dbVendor": "Cassandra",
+  "appTarget": "CASSANDRA",
+  "creationTS": "2018-07-28T16:54:02.126Z",
+  "GUID": "d461eae0-9286-11e8-b7ec-6ff3feb0dda1",
+  "lastModifTS": "2025-04-08T13:09:27.431Z",
+  "persistenceSchemaVersion": "8",
+  "description": "",
+  "comments": "",
+  "author": "",
+  "version": "",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "Cassandra",
+    "pluginVersion": "0.2.11",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "hackoladeMeta": {
+    "validationErrors": {
+      "dbVersion": false
+    }
+  },
+  "applicationInformation": {
+    "version": "8.1.2"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
+            "x": 1464,
+            "y": 1196,
+            "width": 303,
+            "height": 123,
+            "color": {}
+          },
+          {
+            "GUID": "2e924be1-9287-11e8-b7ec-6ff3feb0dda1",
+            "x": 1454.9676616915422,
+            "y": 1045.516169154229,
+            "width": 300,
+            "height": 87,
+            "color": {}
+          },
+          {
+            "GUID": "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
+            "x": 1055,
+            "y": 1228,
+            "width": 272,
+            "height": 177,
+            "color": {}
+          },
+          {
+            "GUID": "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
+            "x": 1040,
+            "y": 1040,
+            "width": 301,
+            "height": 159,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1000,
+            "y": 1000,
+            "GUID": "2e99ed00-9287-11e8-b7ec-6ff3feb0dda1"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "GUID": "2e9224d2-9287-11e8-b7ec-6ff3feb0dda1",
+            "autoWidth": false,
+            "autoHeight": false
+          },
+          {
+            "GUID": "2e924be1-9287-11e8-b7ec-6ff3feb0dda1",
+            "autoWidth": false,
+            "autoHeight": false
+          },
+          {
+            "GUID": "2e9272f2-9287-11e8-b7ec-6ff3feb0dda1",
+            "autoWidth": false,
+            "autoHeight": false
+          },
+          {
+            "GUID": "2e929a02-9287-11e8-b7ec-6ff3feb0dda1",
+            "autoWidth": false,
+            "autoHeight": false
+          }
+        ],
+        "relationshipUpdateDisabled": false,
+        "displayOptions": {
+          "dndHandles": false
+        }
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
 }
